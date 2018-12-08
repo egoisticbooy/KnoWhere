@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KnoWhere | IaaS</title>
+		<link rel="stylesheet" type="text/css" href="./css/master.css">
+		<link rel="stylesheet" type="text/css" href="./css/services.css">
+		<link rel="stylesheet" type="text/css" href="./css/saas_services.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="left"><a class="knowhere" href="http://192.168.122.1/index.html">KnoWhere</a></li>
+				<li class="right"><a class="signin" href="http://192.168.122.1/cgi-bin/logout.cgi">Log out</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="about-holder">
+				<div id="about">
+					<font color="white">This contains data about IaaS.</font>
+				</div>
+			</div>
+			<div class="data">
+				<form method='post' action='http://192.168.122.1/cgi-bin/iaasvnc.cgi'>
+						<div class="options">
+							CentOS<input type='radio' value="redhat" name='os_name' /><br>
+							
+							Ubuntu<input type='radio' value="ubuntu" name='os_name' /><br>
+							
+						</div>
+						<input type='text' name='ram' placeholder="RAM"> <br>
+						<input type="text" name='sizehdd' placeholder="Disk Size"> <br>
+						<input type='text' name='vcpu' placeholder="CPU Cores"> <br>
+									
+						<!--><input type='text' name='os' placeholder="Operating System"> </-->
+						<input type="submit" value="Create"> <br>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="dev-center">
+				<h2><u>Developed By</u></h2><br>
+				<div>
+					
+					<div class="details">
+						KnoWhere Cloud<br>
+						Email id - users@knowhere.com
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+		<script type="text/javascript">
+				document.getElementById("about").style.right="0px";
+		</script>
+	</body>
+</html>
